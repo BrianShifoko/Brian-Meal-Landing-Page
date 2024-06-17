@@ -1,0 +1,15 @@
+{
+  "name": "brian-meal-landing-page",
+  "version": "1.0.0",
+  "description": "A landing page for the Meal Monkey food delivery service.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8080 -c-1"
+  },
+  "keywords": ["landing page", "food delivery", "responsive design"],
+  "author": "Brian Shifoko",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

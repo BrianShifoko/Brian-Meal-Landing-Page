@@ -1,0 +1,270 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cta-buttons {
+    float: right;
+}
+
+.cta-buttons .btn {
+    margin-left: 10px;
+}
+
+/* Hero Section */
+#hero {
+    background: #f8f8f8;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Download App Section */
+#download-app {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#download-app h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.app-links img {
+    width: 150px;
+    margin: 10px;
+}
+
+/* Categories Section */
+#categories {
+    padding: 60px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+#categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    text-align: center;
+    width: 30%;
+}
+
+.category img {
+    max-width: 100%;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.category .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Fastest Delivery Section */
+#fastest-delivery {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+#fastest-delivery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#fastest-delivery p {
+    margin-bottom: 20px;
+}
+
+#fastest-delivery img {
+    max-width: 100%;
+}
+
+/* How We Serve Section */
+#how-we-serve {
+    padding: 60px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+#how-we-serve h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    text-align: center;
+    width: 30%;
+}
+
+.service img {
+    max-width: 100px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Promotions Section */
+#promotions {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promotion {
+    width: 45%;
+}
+
+.promotion h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.promotion p {
+    font-size: 1.2rem;
+    color: #ff6600;
+    margin: 10px 0;
+}
+
+.promotion img {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer .social-links img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .categories, .services {
+        flex-direction: column;
+    }
+
+    .category, .service, .promotion {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
