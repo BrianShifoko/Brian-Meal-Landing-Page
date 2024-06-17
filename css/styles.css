@@ -45,6 +45,10 @@ nav ul li a {
     text-decoration: none;
     color: #333;
 }
+nav ul li a.active {
+    color: #ff6600; 
+    font-weight: bold;
+}
 
 .cta-buttons {
     float: right;
