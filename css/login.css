@@ -1,77 +1,61 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
 }
 
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     height: 100vh;
-    background: url('../images/food-background.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 .login-form {
+    z-index: 1; 
     background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
     width: 100%;
+    max-width: 400px;
     color: #fff;
 }
 
 .login-form img {
-    max-width: 100px;
-    margin-bottom: 20px;
+    max-width: 70px;
 }
 
-.login-form h2 {
-    margin-bottom: 20px;
-}
-
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.login-form input.form-control {
     border: none;
     border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
 }
 
 .login-form button {
-    width: 100%;
-    padding: 10px;
-    background: #ff6600;
-    color: #fff;
+    background: linear-gradient(145deg, #ff9900, #ff6600);
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
 }
 
-.login-form a {
-    color: #fff;
-    display: block;
-    margin: 10px 0;
-}
-
-.login-form p {
-    margin: 20px 0 10px;
-}
-
-.social-login {
-    display: flex;
-    justify-content: space-around;
+.login-form button:hover {
+    transform: skew(-5deg, -5deg);
 }
 
 .social-login button {
-    padding: 10px 20px;
-    background: #fff;
-    color: #333;
+    width: 45%;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    width: 45%;
+    padding: 10px;
 }
 
 .social-login button.google {
@@ -82,4 +66,12 @@ body {
 .social-login button.facebook {
     background: #3b5998;
     color: #fff;
+}
+#togglePassword{
+    color: black;
+    size: 1.5rem;
+}
+.fa-eye:before, .fa-eye-slash:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
 }
