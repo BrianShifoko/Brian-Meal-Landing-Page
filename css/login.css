@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/food-background.jpg') no-repeat center center/cover;
+}
+
+.login-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+}
+
+.login-form img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form a {
+    color: #fff;
+    display: block;
+    margin: 10px 0;
+}
+
+.login-form p {
+    margin: 20px 0 10px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-login button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.social-login button.google {
+    background: #db4437;
+    color: #fff;
+}
+
+.social-login button.facebook {
+    background: #3b5998;
+    color: #fff;
+}
