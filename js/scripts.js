@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Add 'active' class to the clicked link
             this.classList.add('active');
+
+            // Smooth scroll to the section
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
