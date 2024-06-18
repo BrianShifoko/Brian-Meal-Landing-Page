@@ -4,12 +4,25 @@
   "description": "A landing page for the Meal Monkey food delivery service.",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -a localhost -p 8080 -c-1"
+    "start": "http-server -a localhost -p 8080 -c-1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
   },
-  "keywords": ["landing page", "food delivery", "responsive design"],
+  "keywords": [
+    "landing page",
+    "food delivery",
+    "responsive design"
+  ],
   "author": "Brian Shifoko",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1",
+    "vite": "^5.0.0",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "delay": "^6.0.0"
   }
 }
