@@ -1,79 +1,82 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background: linear-gradient(to bottom right, #ff6600, #ff9900);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: url('../images/food-background.jpg') no-repeat center center/cover;
+    width: 100%;
+    max-width: 400px;
 }
 
 .signup-form {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    color: #fff;
+    text-align: center;
 }
 
-.signup-form img {
+.signup-form img.logo {
     max-width: 100px;
     margin-bottom: 20px;
 }
 
 .signup-form h2 {
     margin-bottom: 20px;
+    color: #ff6600;
 }
 
-.signup-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
+.signup-form .form-control {
+    border: 1px solid #ff6600;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
 }
 
 .signup-form button {
-    width: 100%;
-    padding: 10px;
-    background: #ff6600;
-    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ff6600, #ff9900);
     border: none;
-    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-.signup-form p {
-    margin: 20px 0 10px;
-}
-
-.social-login {
-    display: flex;
-    justify-content: space-around;
+.signup-form button:hover {
+    background: #ff6600;
 }
 
 .social-login button {
-    padding: 10px 20px;
+    border-radius: 50px;
     background: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    padding: 5px 10px;
+    margin: 4px;
     cursor: pointer;
-    width: 45%;
+    transition: background 0.3s ease;
 }
-
-.social-login button.google {
-    background: #db4437;
+.social-login button img{
+    width: 20px;
+}
+.social-login button:hover {
+    background: #ff6600;
     color: #fff;
 }
 
-.social-login button.facebook {
-    background: #3b5998;
-    color: #fff;
+.signup-form p a {
+    color: #ff6600;
+    text-decoration: none;
 }
