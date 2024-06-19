@@ -6,36 +6,46 @@
     <title>Login - Brian Meal</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/7856/7856126.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="login-container d-flex justify-content-center align-items-center">
-        <video autoplay muted loop id="background-video">
-            <source src="images/login animation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
         <div class="login-form text-center">
-            <img src="https://cdn-icons-png.flaticon.com/128/7006/7006587.png" alt="Logo" class="mb-4">
+            <div class="logo mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/128/7006/7006587.png" alt="Logo">
+            </div>
             <h2 class="mb-4">Login</h2>
             <form id="loginForm" action="/login" method="POST">
                 <div class="form-group">
                     <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="form-group position-relative">
                     <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-                    <i class="fas fa-eye position-absolute" id="togglePassword" style="cursor: pointer; top: 50%; right: 10px; transform: translateY(-50%);"></i>
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <i class="fas fa-eye position-absolute" id="togglePassword"></i>
                 </div>
-                <button type="submit" class="btn btn-primary w-100 mb-3">Sign In</button>
-                <a href="#">Forgot Password?</a>
+                <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+                <a href="#" class="d-block mb-3">Forgot Password?</a>
                 <p class="mt-3 mb-3">or continue with</p>
                 <div class="social-login d-flex justify-content-around">
-                    <button class="btn btn-danger google"><i class="fab fa-google"></i> Google</button>
-                    <button class="btn btn-primary facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button type="button" class="btn btn-google">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2702/2702602.png" alt="Google Logo">
+                    </button>
+                    <button type="button" class="btn btn-google">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" alt="Facebook Logo">
+                    </button>
+                    <button type="button" class="btn btn-google">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="Twitter Logo">
+                    </button>
                 </div>
-                <p class="mt-3">Don't have an account? <a href="signup.html">Register for free</a></p>
+                <p class="mt-3">Don't have an account? <a href="signup.html">Sign up</a></p>
             </form>
         </div>
     </div>
